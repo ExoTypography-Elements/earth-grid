@@ -1,10 +1,10 @@
 {
-  "name": "earth-skeleton",
+  "name": "earth-grid",
   "version": "0.0.1",
-  "description": "Baseline css for findborg.com and any other project",
+  "description": "A grid and layout element",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ExoTypography-Elements/earth-typography.git"
+    "url": "git+https://github.com/ExoTypography-Elements/earth-grid.git"
   },
   "keywords": [
     "vue",
@@ -15,11 +15,11 @@
   "license": "MIT",
   "author": "Findborg Cooperation",
   "scripts": {
-    "watchify": "watchify -vd -p browserify-hmr -e src/main.js -o dist/earth-skeleton.js",
+    "watchify": "watchify -vd -p browserify-hmr -e src/main.js -o dist/earth-grid.js",
     "serve": "http-server -c 1 -a localhost",
     "dev": "npm-run-all --parallel watchify serve",
     "lint": "eslint --ext .js,.vue src",
-    "build": "cross-env NODE_ENV=production browserify -g envify -p [ vueify/plugins/extract-css -o dist/earth-skeleton.css ] -e src/main.js | uglifyjs -c warnings=false -m > dist/earth-skeleton.js"
+    "build": "cross-env NODE_ENV=production browserify -g envify -p [ vueify/plugins/extract-css -o dist/earth-grid.css ] -e src/main.js | uglifyjs -c warnings=false -m > dist/earth-grid.js"
   },
   "browserify": {
     "transform": [

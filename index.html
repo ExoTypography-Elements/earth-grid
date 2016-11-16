@@ -3,9 +3,9 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-		<title>Findborgs earth-typography element</title>
+		<title>Findborgs earth-grid element</title>
 		<link rel="stylesheet" href="http://localhost/exotypography/earth-typography/dist/earth-typography.css">
-		<link rel="stylesheet" href="dist/earth-skeleton.css">
+		<link rel="stylesheet" href="dist/earth-grid.css">
 		
 		<style type="text/css"> [v-cloak]{display: none;} @-webkit-keyframes fadeIn{from{opacity: 0;}to{opacity: 1;}}@-moz-keyframes fadeIn{from{opacity: 0;}to{opacity: 1;}}@keyframes fadeIn{from{opacity: 0;}to{opacity: 1;}}body{opacity: 0; -webkit-animation: fadeIn ease-in 1; -moz-animation: fadeIn ease-in 1; animation: fadeIn ease-in 1; -webkit-animation-fill-mode: forwards;  -moz-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-duration: .1s; -moz-animation-duration: .1s; animation-duration: .1s;}</style><noscript><style body{-webkit-animation: none;-moz-animation: none;-ms-animation: none;animation: none;}</style></noscript>
 		
@@ -17,19 +17,101 @@
 			<div class="col et-display-3" style="width:150px;vertical-align: middle;"><center>&#9780;</center></div>
 			<div class="col " style="vertical-align: middle;">
 				<dl class="et-headline">
-					<dt >earth-skeleton element</dt>
-					<dd>is a skeleton stack for building custom elements.</dd>
+					<dt >earth-grid element</dt>
+					<dd>is an element for laying out content.</dd>
 				</dl> 
 			</div>
 		</div>
 	</div>
 	<div id="et-start">
-		<skeleton><div slot="testslot">Your app is working</div></skeleton>
+	<h3>Standard Flow</h3>
+        <et-grid>
+          <div class="et-block bright-white-text p3 bg-grey-900 zoomIn">A</div>
+          <div class="et-block bright-white-text p3 bg-grey-900 zoomIn">B</div>
+          <div class="et-block bright-white-text p3 bg-grey-900">C</div>
+          <div class="et-block bright-white-text p3 bg-grey-900">D</div>
+          <div class="et-block bright-white-text p3 bg-grey-900">E Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+          <div class="et-block bright-white-text p3 bg-grey-900">F</div>
+          <div class="et-block bright-white-text p3 bg-grey-900">Same Size</div>
+          <div class="et-block bright-white-text p3 bg-grey-900">Same Size</div>
+          <div class="et-block bright-white-text p3 bg-grey-900">Same Size</div>
+          <div class="et-block bright-white-text p3 bg-grey-900">Same Size</div>
+          <div class="et-block bright-white-text p3 bg-grey-900">Same Size</div>
+          <div class="et-block bright-white-text p3 bg-grey-900">Same Size</div>
+        </et-grid>
+      <h3>Grid Sizing</h3>
+      <et-grid class="et-grid-nowrap">
+      	<div class="et-block bright-white-text p3 bg-grey-700 zoomIn" style="width:250px">A</div>
+        <div class="et-block et-block-flex bright-white-text p3 bg-grey zoomIn" >B</div>
+        <div class="et-block bright-white-text p3 bg-grey-700 zoomIn" style="width:250px">A</div>
+      </et-grid>
+      <!-- section -->
+        <div class="et-grid">  
+    <div class="et-block bg-light-blue et-size-60 et-size-sm-50 p3">
+        Lorem ipsum dolor sit amet.
+    </div>
+    <div class="et-block et-size-40 et-size-sm-50 bg-light-blue p3">
+        Lorem ipsum dolor sit amet.
+    </div>
+    <div class="et-block et-size-25 et-size-sm-100 bg-light-blue p3">
+        Lorem ipsum dolor sit amet.
+    </div>
+    <div class="et-block et-size-75 et-size-sm-100 bg-light-blue p3">
+        Lorem ipsum dolor sit amet.
+    </div>
+    <div class="et-block et-size-50 bg-light-blue p3">
+        Lorem ipsum dolor sit amet.
+    </div>
+    <div class="et-block et-size-50 bg-light-blue p3">
+        Lorem ipsum dolor sit amet.
+    </div>
+    <div class="et-block et-size-70 et-size-sm-100 bg-light-blue p3">
+        Lorem ipsum dolor sit amet.
+    </div>
+    <div class="et-block et-size-30 et-size-sm-100 bg-light-blue p3">
+        Lorem ipsum dolor sit amet.
+    </div>
+    <div class="et-block et-size-20 et-size-sm-50 et-size-md-50 bg-light-blue p3">
+        Lorem ipsum dolor sit amet.
+    </div>
+    <div class="et-block et-size-80 et-size-sm-50 et-size-md-50 bg-light-blue p3">
+        Lorem ipsum dolor sit amet.
+    </div>
+    <div class="et-block et-size-90 et-size-sm-100 et-size-md-50 bg-light-blue p3">
+        Lorem ipsum dolor sit amet.
+    </div>
+    <div class="et-block et-size-10 et-size-sm-100 et-size-md-50 bg-light-blue p3">
+        Lorem ipsum dolor sit amet.
+    </div>
+</div>  
+      <!-- end section -->
+
+      <h3>Nested Grids</h3>
+
+      <div class="et-grid">
+        <div class="et-block et-size-50 bg-green">Left Side - no margins or padding
+         <div class="et-grid et-grid-no-spacing">
+            <div class="et-block et-size-50 p3 bg-yellow">Left Side</div>
+            <div class="et-block et-size-50 p3 bg-yellow ">Right Side</div>
+        </div> 
+        </div>
+        <div class="et-block et-size-50 bg-green">Right Side
+        <et-grid>
+            <div class="et-block et-size-50 p3 bg-yellow">Left Side</div>
+            <div class="et-block et-size-50 p3 bg-yellow">Right Side</div>
+        </et-grid>    
+        </div>
+      </div>
 	</div>
 	<!-- load scripts -->
 	<script src="https://cdn.jsdelivr.net/vue/2.0.3/vue.min.js"></script>
 	
-	<script src="dist/earth-skeleton.js"></script>
+	<script src="dist/earth-grid.js"></script>
 	
  
 </body>

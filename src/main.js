@@ -10,7 +10,7 @@ new Vue({
  //store: store,
   components: {
    
-    Skeleton:  Skeleton,
+    etGrid:  Skeleton,
    
 
 }
