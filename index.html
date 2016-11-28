@@ -4,9 +4,116 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 		<title>Findborgs earth-grid element</title>
-		<link rel="stylesheet" href="http://localhost/exotypography/earth-typography/dist/earth-typography.css">
+		<link rel="stylesheet" href="http://findborg.com/exotypography/earth-typography/dist/earth-typography.css">
+		<!-- <link rel="stylesheet" href="http://localhost/exotypography/earth-typography/dist/earth-typography.css"> -->
 		<link rel="stylesheet" href="dist/earth-grid.css">
-		
+		<style type="text/css">
+			.intro-header{
+display: flex;
+  align-items: center; 
+  min-height: 25vh;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  margin: auto;
+
+  background: color-primary}
+
+  @element '.intro-header' and (min-width: 960px) {
+  .intro-header {
+    background: bright-black;
+    color: off-white;
+  }
+}
+html {
+ font-size: 16px;
+ line-height: 25.888px;
+}
+
+h1 {
+ font-size: calc(67.773 / 16 * 1rem);
+ line-height: calc(77.664 / 67.773); /* 77.664 = 25.888 *3 */
+ margin-top: calc(67.773 / 25.888 * 1rem);
+ margin-bottom: calc(67.773 / 25.888 / 2 * 1rem);
+}
+
+h2 {
+ font-size: calc(41.887 / 16 * 1rem);
+ line-height: calc(77.664 / 41.887);
+ margin-top: calc(41.887 / 25.888 * 1rem);
+ margin-bottom: calc(41.887 / 25.888 / 2 * 1rem);
+}
+
+h3 {
+ font-size: calc(25.888 / 16 * 1rem);
+ line-height: calc(77.664 / 25.888);
+ margin-top: calc(25.888 / 25.888 * 1rem);
+ margin-bottom: calc(25.888 / 25.888 / 2 * 1rem);
+}
+
+p {
+ margin: 0;
+}
+
+p + p {
+ margin-top: 1.618rem;
+}
+
+@media screen and (min-width: 768px) {
+ html {
+  font-size: 20px;
+  line-height: 1.4;
+ }
+ 
+ h1 {
+  font-size: 40px;
+ }
+
+ h2 {
+  font-size: 34px;
+ }
+
+ h3 {
+  font-size: 28px;
+ }
+
+ h4 {
+  font-size: 22px;
+ }
+
+ p {
+  font-size: 20px;
+ }
+}
+
+@media screen and (min-width: 1200px) {
+ html {
+  font-size: 22px;
+  line-height: 1.414;
+ }
+
+ h1 {
+  font-size: 42px;
+ }
+
+ h2 {
+  font-size: 36px;
+ }
+
+ h3 {
+  font-size: 30px;
+ }
+
+ h4 {
+  font-size: 24px;
+ }
+
+ p {
+  font-size: 22px;
+ }
+}
+		</style>
 		<style type="text/css"> [v-cloak]{display: none;} @-webkit-keyframes fadeIn{from{opacity: 0;}to{opacity: 1;}}@-moz-keyframes fadeIn{from{opacity: 0;}to{opacity: 1;}}@keyframes fadeIn{from{opacity: 0;}to{opacity: 1;}}body{opacity: 0; -webkit-animation: fadeIn ease-in 1; -moz-animation: fadeIn ease-in 1; animation: fadeIn ease-in 1; -webkit-animation-fill-mode: forwards;  -moz-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-duration: .1s; -moz-animation-duration: .1s; animation-duration: .1s;}</style><noscript><style body{-webkit-animation: none;-moz-animation: none;-ms-animation: none;animation: none;}</style></noscript>
 		
 	</head>
@@ -24,6 +131,111 @@
 		</div>
 	</div>
 	<div id="et-start">
+	<!-- test -->
+<div class="fukol mt4 mx16"> <!-- 6 -->
+  <ul class="fukol-grid">
+    <li class="" ><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></li>
+    <li class="" >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<!-- grid cell/item/child/whatever --></li>
+    <li class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<!-- grid cell/item/child/whatever --></li>
+    <li class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<!-- grid cell/item/child/whatever --></li>
+    <li class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<!-- grid cell/item/child/whatever --></li>
+    
+  </ul>
+</div>
+<div style="clear: both;">
+<h2>Same grid in 3 different size containers</h2>
+<et-grid class="mx-auto bg-grey-200" style="max-width: 960px">
+<div class="et-block et-size-100 et-size-sm-100 et-size-md-25">
+	<div class="bg-light-blue">
+	<et-grid>
+          <div class="et-block et-size-100 et-size-sm-100 et-size-md-50 et-size-lg-50 bright-white-text p3 bg-grey-900 zoomIn">A</div>
+          <div class="et-block et-size-100 et-size-sm-100 et-size-md-50 et-size-lg-50 bright-white-text p3 bg-grey-900 zoomIn">B</div>
+          <div class="et-block et-size-100 et-size-sm-100 et-size-md-50 et-size-lg-50 bright-white-text p3 bg-grey-900">C</div>
+          <div class="et-block et-size-100 et-size-sm-100 et-size-md-50 et-size-lg-50 bright-white-text p3 bg-grey-900 zoomIn">A</div>
+          <div class="et-block et-size-100 et-size-sm-100 et-size-md-50 et-size-lg-50 bright-white-text p3 bg-grey-900 zoomIn">B</div>
+          <div class="et-block et-size-100 et-size-sm-100 et-size-md-50 et-size-lg-50 bright-white-text p3 bg-grey-900">C</div>
+    </et-grid>
+</div>
+</div>
+<div class="et-block et-size-100 et-size-sm-100 et-size-md-75">
+	<div class="bg-yellow" >
+	<et-grid>
+          <div class="et-block et-size-100 et-size-sm-100 et-size-md-30 et-size-lg-50 bright-white-text p3 bg-grey-900 zoomIn">A</div>
+          <div class="et-block et-size-100 et-size-sm-100 et-size-md-70 et-size-lg-50 bright-white-text p3 bg-grey-900 zoomIn">B</div>
+          <div class="et-block et-size-100 et-size-sm-100 et-size-md-30 et-size-lg-50 bright-white-text p3 bg-grey-900">C</div>
+          <div class="et-block et-size-100 et-size-sm-100 et-size-md-70 et-size-lg-50 bright-white-text p3 bg-grey-900 zoomIn">A</div>
+          <div class="et-block et-size-100 et-size-sm-100 et-size-md-30 et-size-lg-50 bright-white-text p3 bg-grey-900 zoomIn">B</div>
+          <div class="et-block et-size-100 et-size-sm-100 et-size-md-70 et-size-lg-50 bright-white-text p3 bg-grey-900">C</div>
+     </et-grid>
+</div>
+</div>
+<div class="et-block et-size-100 bg-grey" >
+	<et-grid>
+          <div class="et-block et-size-100 et-size-sm-100 et-size-md-30 et-size-lg-60 bright-white-text p3 bg-grey-900 zoomIn">A</div>
+          <div class="et-block et-size-100 et-size-sm-100 et-size-md-70 et-size-lg-40 bright-white-text p3 bg-grey-900 zoomIn">B</div>
+          <div class="et-block et-size-100 et-size-sm-100 et-size-md-30 et-size-lg-60 bright-white-text p3 bg-grey-900">C</div>
+          <div class="et-block et-size-100 et-size-sm-100 et-size-md-70 et-size-lg-40 bright-white-text p3 bg-grey-900 zoomIn">A</div>
+          <div class="et-block et-size-100 et-size-sm-100 et-size-md-30 et-size-lg-60 bright-white-text p3 bg-grey-900 zoomIn">B</div>
+          <div class="et-block et-size-100 et-size-sm-100 et-size-md-70 et-size-lg-40 bright-white-text p3 bg-grey-900">C</div>
+     </et-grid>
+</div>
+</et-grid>
+
+
+
+</div>
+
+
+
+<section class="et-grid">
+    <div class="et-block  hide-small ">Small</div>
+    <div class="et-block  hide-medium ">Medium</div>
+    <div class="et-block  hide-large ">Large</div>
+  </section>
+<et-grid>
+
+    <div class="et-block et-size-50 hide-small bg-light-blue p3" >Hide small</div>
+    <div class="et-block et-size-50 hide-medium bg-red p3" >Hide medium<!-- grid cell/item/child/whatever --></div>
+    <div class="et-block et-size-50 hide-large bg-green p3">Hide large<!-- grid cell/item/child/whatever --></div>
+   
+    
+ 
+</et-grid>
+<et-grid class="mt4">
+
+    
+    <div class="et-block et-size-100 show-small bg-yellow et-display-1 p3">A small surprise<!-- grid cell/item/child/whatever --></div>
+    <div class="et-block et-size-100 show-medium bg-purple et-display-2 p3">Somewhere in the middle<!-- grid cell/item/child/whatever --></div>
+    <div class="et-block et-size-100 show-large bg-orange et-display-3 p3">Larger than life<!-- grid cell/item/child/whatever --></div>
+    
+ 
+</et-grid>
+	<!-- end test -->
 	<h3>Standard Flow</h3>
         <et-grid>
           <div class="et-block bright-white-text p3 bg-grey-900 zoomIn">A</div>
@@ -48,54 +260,57 @@
       <et-grid class="et-grid-nowrap">
       	<div class="et-block bright-white-text p3 bg-grey-700 zoomIn" style="width:250px">A</div>
         <div class="et-block et-block-flex bright-white-text p3 bg-grey zoomIn" >B</div>
-        <div class="et-block bright-white-text p3 bg-grey-700 zoomIn" style="width:250px">A</div>
+        <div class="et-block bright-white-text p3 bg-amber-700 zoomIn" style="width:477px">A</div>
       </et-grid>
       <!-- section -->
-        <div class="et-grid">  
-    <div class="et-block bg-light-blue et-size-60 et-size-sm-50 p3">
+        <et-grid>  
+    <div class="et-block et-size-60 et-size-sm-50 et-size-md-40  et-size-lg-60 bg-light-blue  p3">
         Lorem ipsum dolor sit amet.
     </div>
-    <div class="et-block et-size-40 et-size-sm-50 bg-light-blue p3">
+    <div class="et-block et-size-40 et-size-sm-50 et-size-md-60 et-size-lg-40 bg-blue p3">
         Lorem ipsum dolor sit amet.
     </div>
-    <div class="et-block et-size-25 et-size-sm-100 bg-light-blue p3">
+    <div class="et-block et-size-lg-50 bg-light-blue p3">
         Lorem ipsum dolor sit amet.
     </div>
-    <div class="et-block et-size-75 et-size-sm-100 bg-light-blue p3">
+    <div class="et-block et-size-lg-50 bg-light-blue p3">
         Lorem ipsum dolor sit amet.
     </div>
-    <div class="et-block et-size-50 bg-light-blue p3">
+    <div class="et-block et-size-sm-50 et-size-lg-25 bg-light-blue p3">
         Lorem ipsum dolor sit amet.
     </div>
-    <div class="et-block et-size-50 bg-light-blue p3">
+    <div class="et-block et-size-sm-50 et-size-lg-75 bg-light-blue p3">
         Lorem ipsum dolor sit amet.
     </div>
-    <div class="et-block et-size-70 et-size-sm-100 bg-light-blue p3">
+    <div class="et-block et-size-sm-40 et-size-lg-20 bg-light-blue p3">
         Lorem ipsum dolor sit amet.
     </div>
-    <div class="et-block et-size-30 et-size-sm-100 bg-light-blue p3">
+    <div class="et-block et-size-sm-60 et-size-lg-80 bg-light-blue p3">
         Lorem ipsum dolor sit amet.
     </div>
-    <div class="et-block et-size-20 et-size-sm-50 et-size-md-50 bg-light-blue p3">
+    <div class="et-block et-size-lg-50 hide-medium bg-yellow p3">
+        This is gone during the medium.
+    </div>
+    <div class="et-block et-size-lg-50 hide-medium bg-yellow p3">
+        This is gone during the medium.
+    </div>
+    <div class="et-block et-size-sm-50 et-size-md-20 et-size-lg-80 bg-light-blue p3">
         Lorem ipsum dolor sit amet.
     </div>
-    <div class="et-block et-size-80 et-size-sm-50 et-size-md-50 bg-light-blue p3">
+    <div class="et-block et-size-sm-50 et-size-md-80 et-size-lg-20 bg-light-blue p3">
         Lorem ipsum dolor sit amet.
     </div>
-    <div class="et-block et-size-90 et-size-sm-100 et-size-md-50 bg-light-blue p3">
-        Lorem ipsum dolor sit amet.
+    <div class="et-block show-small bg-red et-white-text p3">
+       <p> So?? What do you think?</p>
     </div>
-    <div class="et-block et-size-10 et-size-sm-100 et-size-md-50 bg-light-blue p3">
-        Lorem ipsum dolor sit amet.
-    </div>
-</div>  
+</et-grid>  
       <!-- end section -->
 
       <h3>Nested Grids</h3>
 
       <div class="et-grid">
         <div class="et-block et-size-50 bg-green">Left Side - no margins or padding
-         <div class="et-grid et-grid-no-spacing">
+         <div  class="et-grid et-grid-no-spacing">
             <div class="et-block et-size-50 p3 bg-yellow">Left Side</div>
             <div class="et-block et-size-50 p3 bg-yellow ">Right Side</div>
         </div> 

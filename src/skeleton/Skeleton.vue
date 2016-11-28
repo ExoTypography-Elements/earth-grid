@@ -16,85 +16,24 @@ msg: 'FINDBORG COOPERATION'
 }
 }
 </script>
-<style lang="stylus">
+<style type="txt/eqcss">
 /*  Require ET Styles Framework */
- @import "../et/variables"
+/* @import "../et/variables"*/
 /*  End of ET Styles Framework */
+.fukol-grid {
+  display: flex; /* 1 */
+  flex-wrap: wrap; /* 2 */
+  margin: -0.5em; /* 5 (edit me!) */
+}
+
+.fukol-grid > * {
+  flex: 1 0 30vw; /* 3 (edit me!) */
+  margin: 0.5em; /* 4 (edit me!) */
+}
 
 
-/* GRID */
-grid-desktop-columns = 12
-grid-desktop-gutter = 16px
-grid-desktop-margin = 16px
-grid-desktop-breakpoint = 840px
-
-grid-tablet-gutter = grid-desktop-gutter
-grid-tablet-margin = grid-desktop-margin
-grid-tablet-breakpoint = 480px
-
-grid-phone-gutter = grid-desktop-gutter
-grid-phone-margin = grid-desktop-margin
-grid-cell-default-columns = grid-phone-columns
-//Containers
-.et-container
-  margin: 0 auto
-  padding: 0
-//Vertical and Horizontal Layouts
-//Flex Layout
-.et-order-12
-  -webkit-order: 12
-  -ms-flex-order: 12
-  order: 12
-.et-order-11
-  -webkit-order: 11
-  -ms-flex-order: 11
-  order: 11
-.et-order-10
-  -webkit-order: 10
-  -ms-flex-order: 10
-  order: 10
-.et-order-9
-  -webkit-order: 9
-  -ms-flex-order: 9
-  order: 9
-.et-order-8
-  -webkit-order: 8
-  -ms-flex-order: 8
-  order: 8
-.et-order-7
-  -webkit-order: 7
-  -ms-flex-order: 7
-  order: 7
-.et-order-6
-  -webkit-order: 6
-  -ms-flex-order: 6
-  order: 6
-.et-order-5
-  -webkit-order: 5
-  -ms-flex-order: 5
-  order: 5
-.et-order-4
-  -webkit-order: 4
-  -ms-flex-order: 4
-  order: 4
-.et-order-3
-  -webkit-order: 3
-  -ms-flex-order: 3
-  order: 3
-.et-order-2
-  -webkit-order: 2
-  -ms-flex-order: 2
-  order: 2
-.et-order-1
-  -webkit-order: 1
-  -ms-flex-order: 1
-  order: 1
-.et-order-0
-  -webkit-order: 0
-  -ms-flex-order: 0
-  order: 0
-
-.et-grid {
+ @element ".et-grid" {
+     .et-grid {
     display: flex;
     flex-flow: row wrap;
     margin: 0 auto 0 auto;
@@ -128,10 +67,10 @@ grid-cell-default-columns = grid-phone-columns
 .et-grid.et-grid-no-spacing>.et-block {
     margin: 0;
 }
-//Block Sizing
-
-@media (max-width: 479px) {
-    .et-grid {
+      
+    }
+    @element ".et-grid" and (max-width: 479px) {
+         .et-grid {
     padding: 8px;
 }
 .et-block {
@@ -226,9 +165,13 @@ grid-cell-default-columns = grid-phone-columns
 }
 .et-grid.et-grid-no-spacing>.et-block--3-offset, .et-grid.et-grid-no-spacing>.et-block--3-offset-sm.et-block--3-offset-sm {
     margin-left: 75%}
-}
-@media (min-width: 480px) and (max-width: 839px) {
-    .et-grid {
+    $this [class*=hide-small] { display: none; }
+      $this [class*=show-large] { display: none; }
+      $this [class*=show-medium] { display: none; }
+      $this [class*=show-small] { display: block; }
+    }
+    @element ".et-grid" and (min-width: 480px) and (max-width: 839px) {
+         .et-grid {
     padding: 8px;
 }
 .et-block {
@@ -403,9 +346,13 @@ grid-cell-default-columns = grid-phone-columns
 }
 .et-grid.et-grid-no-spacing>.et-block--7-offset, .et-grid.et-grid-no-spacing>.et-block--7-offset-md.et-block--7-offset-md {
     margin-left: 87.5%}
-}
-@media (min-width: 840px) {
-    .et-grid {
+    $this [class*=hide-medium] { display: none; }
+      $this [class*=show-large] { display: none; }
+      $this [class*=show-medium] { display: block; }
+      $this [class*=show-small] { display: none; }
+    }
+    @element ".et-grid" and (min-width: 840px) {
+          .et-grid {
     padding: 8px;
 }
 .et-block {
@@ -600,26 +547,12 @@ grid-cell-default-columns = grid-phone-columns
 }
 .et-grid.et-grid-no-spacing>.et-block--11-offset, .et-grid.et-grid-no-spacing>.et-block--11-offset-lg.et-block--11-offset-lg {
     margin-left: 91.66667%}
-}
+    $this [class*=hide-large] { display: none; }
+      $this [class*=show-large] { display: block; }
+      $this [class*=show-medium] { display: none; }
+      $this [class*=show-small] { display: none; }
+    }
 
-.intro-header{
-display: flex;
-  align-items: center; 
-  min-height: 25vh;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  margin: auto;
-
-  background: color-primary}
-
-  @element '.intro-header' \a\n\d (min-width: 960px) {
-  .intro-header {
-    background: bright-black;
-    color: off-white;
-  }
-}
 
 
       
